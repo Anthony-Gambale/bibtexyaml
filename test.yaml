@@ -25,7 +25,7 @@ entries:
       author: Tobias Oetiker
       year: 2021
       title: A (Not So) Short Introduction to LaTeX 2_ε
-      url: https://www.ctan.org/tex-archive/info/lshort/english/
+#     url: https://www.ctan.org/tex-archive/info/lshort/english/
 
 #  - id: pictureSource
 #    type: misc

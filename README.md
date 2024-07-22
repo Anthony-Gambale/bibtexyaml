@@ -2,11 +2,6 @@
 
 Write your bibliography in YAML and convert it to BibTeX. CLI built using [Cobra](https://github.com/spf13/cobra).
 
-### Features
-
-- [x] (Templating) Compile YAML bibliography into BibTeX
-- [ ] (Reverse-templating) Convert BibTeX entries into YAML
-
 ### Installation and Usage
 
 First, [install Go](https://go.dev/doc/install).
@@ -33,23 +28,29 @@ The following YAML file is converted into the BibTeX below.
 
 ```yaml
 entries:
-  - id: MyPaper
-    type: inproceedings
+  - id: Oetiker2021LatexIntroduction
+    type: misc
     fields:
-      author: Me Myself and Someone Else
-      booktitle: "Book Title"
-      title: "Title"
-#     year: 2024
-#     pages: C137--$\infty$
-#     publisher: Unsure
+      author: Tobias Oetiker
+      year: 2021
+      title: A (Not So) Short Introduction to LaTeX 2_ε
+#     url: https://www.ctan.org/tex-archive/info/lshort/english/
 ```
 
 ```BibTeX
-@inproceedings{MyPaper,
-    title = "Title",
-    author = "Me Myself and Someone Else",
-    booktitle = "Book Title",
+@misc{Oetiker2021LatexIntroduction,
+    year = "2021",
+    title = "A (Not So) Short Introduction to LaTeX 2_ε",
+    author = "Tobias Oetiker",
 }
 ```
 
 See `test.yaml` and `test.bib` for a more comprehensive example.
+
+### Todo (contribution wanted)
+
+- [x] Compile YAML bibliography into BibTeX
+- [ ] Quality of life changes
+  - [ ] Better error messages
+  - [ ] Stop printing templating output to terminal
+- [ ] (Stretch goal) Reverse templating: convert BibTeX entries into YAML
