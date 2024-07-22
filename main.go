@@ -1,6 +1,6 @@
 package main
 
-import "BibTeX-YAML/cmd"
+import "github.com/Anthony-Gambale/BibTeX-YAML/cmd"
 
 func main() {
 	cmd.Execute()

@@ -1,4 +1,4 @@
-module BibTeX-YAML
+module github.com/Anthony-Gambale/BibTeX-YAML
 
 go 1.22.5
 

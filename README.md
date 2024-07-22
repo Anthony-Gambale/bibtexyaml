@@ -17,4 +17,4 @@ Now, simply run
 
 `BibTeX-YAML template <file-name>.yaml`
 
-to generate (or overwrite) `<file-name>.bib` with your compiled bibliography.
+to generate (or overwrite) `<file-name>.bib` with your bibliography.
