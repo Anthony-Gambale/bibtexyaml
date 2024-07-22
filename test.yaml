@@ -1,0 +1,35 @@
+entries:
+  - id: Smith2021Wubalubadubdub
+    type: inproceedings
+    fields:
+      author: Richard Smith and Summer Smith and Morty Smith
+      booktitle: "Plumbus: How they do it"
+      title: "Wubalubadubdub: Rick & Morty Forever and Forever a Hundred Years"
+      year: 2115
+      pages: C137--$\infty$
+      publisher: Adult Swim
+
+  - id: Cooper2015SuperfluidVacuumTheory
+    type: inproceedings
+    fields:
+      author: Sheldon Lee Cooper and Leonard Leakey Hofstadter
+#      booktitle: The Troll Manifestation
+#      title: "Superfluid Vacuum Theory: Spacetime is a Surface of the Superfluid"
+#      year: 2015
+#      pages: 42--73
+#      publisher: Scientific American
+
+  - id: Oetiker2021LatexIntroduction
+    type: misc
+    fields:
+      author: Tobias Oetiker
+      year: 2021
+      title: A (Not So) Short Introduction to LaTeX 2_ε
+      url: https://www.ctan.org/tex-archive/info/lshort/english/
+
+#  - id: pictureSource
+#    type: misc
+#    fields:
+#      author: Ann H
+#      url: https://www.pexels.com/de-de/foto/schwarzes-holzernes-wanddekor-3095771/
+#      note: According to https://www.pexels.com/license/, all photos on that website can be used for free.
