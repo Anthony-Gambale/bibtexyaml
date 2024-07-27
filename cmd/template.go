@@ -65,8 +65,6 @@ func runTemplating(cmd *cobra.Command, args []string) error {
 		return fmt.Errorf("failed to generate BibTeX: %w", err)
 	}
 
-	fmt.Printf("%s\n", outputText)
-
 	// File name of output file
 	bibFileName := fileName[:len(fileName)-5] + ".bib"
 
@@ -97,7 +95,7 @@ func convertToBibTeX(bibliography *YAMLBibliography) (string, error) {
 	for _, entry := range bibliography.Entries {
 		result.WriteString(fmt.Sprintf("@%s{%s,\n", entry.Type, entry.ID))
 		for key, value := range entry.Fields {
-			result.WriteString(fmt.Sprintf("    %s = \"%s\",\n", key, value))
+			result.WriteString(fmt.Sprintf("  %s = {%s},\n", key, value))
 		}
 		result.WriteString("}\n\n")
 	}

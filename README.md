@@ -39,9 +39,9 @@ entries:
 
 ```BibTeX
 @misc{Oetiker2021LatexIntroduction,
-    year = "2021",
-    title = "A (Not So) Short Introduction to LaTeX 2_ε",
-    author = "Tobias Oetiker",
+  year = {2021},
+  title = {A (Not So) Short Introduction to LaTeX 2_ε},
+  author = {Tobias Oetiker},
 }
 ```
 
@@ -51,6 +51,7 @@ See `test.yaml` and `test.bib` for a more comprehensive example.
 
 - [x] Compile YAML bibliography into BibTeX
 - [ ] Quality of life changes
-  - [ ] Better error messages
-  - [ ] Stop printing templating output to terminal
-- [ ] (Stretch goal) Reverse templating: convert BibTeX entries into YAML
+  - [x] Stop printing templating output to terminal
+  - [x] Add curly braces to every field
+  - [ ] Better YAML parser error messages
+- [ ] Reverse templating: convert BibTeX entries into YAML
