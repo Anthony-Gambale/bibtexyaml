@@ -60,22 +60,20 @@ func runTemplating(cmd *cobra.Command, args []string) error {
 	}
 
 	// Generate BibTeX
-	outputText, err := convertToBibTeX(&data)
-	if err != nil {
-		return fmt.Errorf("failed to generate BibTeX: %w", err)
-	}
+	outputText := convertToBibTeX(&data)
 
 	// File name of output file
 	bibFileName := fileName[:len(fileName)-5] + ".bib"
 
+	// Create file
 	file, err = os.Create(bibFileName)
 	if err != nil {
 		return fmt.Errorf("failed to create file %s: %w", bibFileName, err)
 	}
 	defer file.Close()
 
+	// Write to file
 	_, err = file.Write([]byte(outputText))
-
 	if err != nil {
 		return fmt.Errorf("failed to write to file %s: %w", bibFileName, err)
 	}
@@ -83,14 +81,7 @@ func runTemplating(cmd *cobra.Command, args []string) error {
 	return nil
 }
 
-func isYamlFile(name string) bool {
-	if len(name) < 5 {
-		return false
-	}
-	return name[len(name)-5:] == ".yaml"
-}
-
-func convertToBibTeX(bibliography *YAMLBibliography) (string, error) {
+func convertToBibTeX(bibliography *YAMLBibliography) string {
 	var result strings.Builder
 	for _, entry := range bibliography.Entries {
 		result.WriteString(fmt.Sprintf("@%s{%s,\n", entry.Type, entry.ID))
@@ -99,5 +90,5 @@ func convertToBibTeX(bibliography *YAMLBibliography) (string, error) {
 		}
 		result.WriteString("}\n\n")
 	}
-	return result.String(), nil
+	return result.String()
 }
