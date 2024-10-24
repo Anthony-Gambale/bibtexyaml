@@ -1,4 +1,4 @@
-module github.com/Anthony-Gambale/bibtexyaml
+module github.com/anthonygam/bibtexyaml
 
 go 1.22.5
 

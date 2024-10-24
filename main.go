@@ -1,6 +1,6 @@
 package main
 
-import "github.com/Anthony-Gambale/bibtexyaml/cmd"
+import "github.com/anthonygam/bibtexyaml/cmd"
 
 func main() {
 	cmd.Execute()
