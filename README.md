@@ -2,7 +2,7 @@
 
 Write your bibliography in YAML and convert it to BibTeX.
 
-### Usage
+## Usage
 
 Put one or more BibTeX references into a file called `new.bib`. For example
 
@@ -44,7 +44,7 @@ The unwanted field `booktitle` is now removed, and this can easily be undone by 
 
 See `new.bib`, `test.yaml` and `test.bib` for a more comprehensive example.
 
-### Installation
+## Installation
 
 First, [install Go](https://go.dev/doc/install).
 
@@ -57,16 +57,5 @@ You'll also need to add your go binaries to the PATH
 `export PATH=$PATH:$HOME/go/bin`
 
 Don't forget to add this to `~/.bashrc` to run it every time you open a new shell.
-
-### Todo (contribution wanted)
-
-- [x] Templating: Compile YAML bibliography into BibTeX
-- [x] Reverse templating: convert BibTeX entries into YAML
-- [ ] Quality of life changes
-  - [x] Stop printing templating output to terminal
-  - [x] Add curly braces to every field
-  - [ ] Better Go error handling (some errors are being ignored)
-  - [ ] Better YAML parsing errors (some information is missing e.g. column number)
-  - [ ] Breaking code into smaller pieces, readability
 
 Built using [Cobra](https://github.com/spf13/cobra).
