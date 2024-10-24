@@ -1,6 +1,6 @@
 # bibtexyaml
 
-Write your bibliography in YAML and convert it to BibTeX. CLI built using [Cobra](https://github.com/spf13/cobra).
+Write your bibliography in YAML and convert it to BibTeX. Built using [Cobra](https://github.com/spf13/cobra).
 
 ### Installation
 
@@ -8,7 +8,7 @@ First, [install Go](https://go.dev/doc/install).
 
 Next, install the current version of bibtexyaml
 
-`go install github.com/Anthony-Gambale/bibtexyaml@v1.2.2`
+`go install github.com/anthonygam/bibtexyaml@v1.2.2`
 
 You'll also need to add your go binaries to the PATH
 
@@ -36,7 +36,7 @@ entries:
   - id: davis2018
     type: conference
     fields:
-#     booktitle: Proceedings of the Example Conference
+      # booktitle: Proceedings of the Example Conference
       year: 2018
       author: Davis, Bob
       title: A Conference Paper
