@@ -8,7 +8,7 @@ First, [install Go](https://go.dev/doc/install).
 
 Next, install the current version of bibtexyaml
 
-`go install github.com/Anthony-Gambale/bibtexyaml@v1.2.0`
+`go install github.com/Anthony-Gambale/bibtexyaml@v1.2.2`
 
 You'll also need to add your go binaries to the PATH
 
