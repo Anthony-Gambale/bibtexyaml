@@ -1,4 +1,4 @@
-# BibTeX-YAML
+# bibtexyaml
 
 Write your bibliography in YAML and convert it to BibTeX. CLI built using [Cobra](https://github.com/spf13/cobra).
 
@@ -6,9 +6,9 @@ Write your bibliography in YAML and convert it to BibTeX. CLI built using [Cobra
 
 First, [install Go](https://go.dev/doc/install).
 
-Next, install the current version of BibTeX-YAML
+Next, install the current version of bibtexyaml
 
-`go install github.com/Anthony-Gambale/BibTeX-YAML@v1.1.0`
+`go install github.com/Anthony-Gambale/bibtexyaml@v1.1.0`
 
 You'll also need to add your go binaries to the PATH
 
@@ -29,7 +29,7 @@ Start by putting your new BibTeX references into a file called `new.bib`. For ex
 }
 ```
 
-Then use `BibTeX-YAML reverse <name>.yaml` to convert the entries to YAML and *append* them to the end of your current bibliography in `<name>.yaml`. If you don't have this file yet, it will be created. It may look something like the following
+Then use `bibtexyaml reverse <name>.yaml` to convert the entries to YAML and *append* them to the end of your current bibliography in `<name>.yaml`. If you don't have this file yet, it will be created. It may look something like the following
 
 ```yaml
 entries:
@@ -42,7 +42,7 @@ entries:
       title: A Conference Paper
 ```
 
-Note that once you do this, the entries in `new.bib` will be cleared. Next, you can comment out fields you aren't sure if you want to use, as has been done with `booktitle` above. Use `BibTeX-YAML template <name>.yaml` to convert your entire YAML bibliography back into BibTeX. This will overwrite your `<name>.bib` file, or create it if it does not exist. This may look something like the following
+Note that once you do this, the entries in `new.bib` will be cleared. Next, you can comment out fields you aren't sure if you want to use, as has been done with `booktitle` above. Use `bibtexyaml template <name>.yaml` to convert your entire YAML bibliography back into BibTeX. This will overwrite your `<name>.bib` file, or create it if it does not exist. This may look something like the following
 
 ```BibTeX
 @conference{davis2018,
@@ -52,7 +52,7 @@ Note that once you do this, the entries in `new.bib` will be cleared. Next, you 
 }
 ```
 
-This is the general workflow of `BibTeX-YAML`.
+This is the general workflow of `bibtexyaml`.
 
 See `new.bib`, `test.yaml` and `test.bib` for a more comprehensive example.
 

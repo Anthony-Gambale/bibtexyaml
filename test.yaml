@@ -3,19 +3,19 @@ entries:
   - id: smith2020
     type: article
     fields:
-#     number: 2
+      #number: 2
       pages: 1-10
       year: 2020
       author: Smith, John
       title: A Sample Article
-#     journal: Journal of Examples
-#     volume: 10
+      #journal: Journal of Examples
+      #volume: 10
 
   # this entry is being added from `new.bib`
   - id: johnson2019
     type: book
     fields:
-#     publisher: Publisher's Name
+      #publisher: Publisher's Name
       year: 2019
       author: Johnson, Jane
       title: A Book Example
@@ -24,7 +24,7 @@ entries:
   - id: davis2018
     type: conference
     fields:
-#     booktitle: Proceedings of the Example Conference
+      #booktitle: Proceedings of the Example Conference
       year: 2018
       author: Davis, Bob
       title: A Conference Paper

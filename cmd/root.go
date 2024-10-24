@@ -7,9 +7,9 @@ import (
 )
 
 var rootCmd = &cobra.Command{
-	Use:   "BibTeX-YAML",
+	Use:   "bibtexyaml",
 	Short: "Convert YAML into BibTeX and vice versa.",
-	Long:  "Convert YAML into BibTeX and vice versa. See https://github.com/Anthony-Gambale/BibTeX-YAML for more information.",
+	Long:  "Convert YAML into BibTeX and vice versa. See https://github.com/Anthony-Gambale/bibtexyaml for more information.",
 }
 
 func Execute() {
